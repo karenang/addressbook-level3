@@ -66,5 +66,8 @@ public abstract class Command {
         this.targetIndex = targetIndex;
     }
     
+    /*
+     * Returns true if a command could potentially mutate data.
+     */
     public abstract boolean isMutating();
 }

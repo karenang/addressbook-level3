@@ -76,11 +76,14 @@ public class Logic {
     }
 
     /**
-     * Executes the command, updates storage, and returns the result.
+     * Executes the command, updates storage if the command is mutating and
+     * returns the result.
      *
-     * @param command user command
+     * @param command
+     *            user command
      * @return result of the command
-     * @throws Exception if there was any problem during command execution.
+     * @throws Exception
+     *             if there was any problem during command execution.
      */
     private CommandResult execute(Command command) throws Exception {
         command.setData(addressBook, lastShownList);
